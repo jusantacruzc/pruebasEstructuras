@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="discoverBooks content">
+        <div class="head">
+            <h1>Discover Books</h1>
+            <blockquote>"If you don’t like to read, you haven’t found the right book." - J.K. Rowling</blockqoute>
+        </div>
+        <select name="category books" id="categoryBooks">
+            <option value="">-</option>
+            <option value="Nonfiction">Nonfiction</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Horror">Horror</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Fiction">Fiction</option>
+        </select>
+        <button id="next">Next</button>
+    </div>
+
+    <div class="filteredResults content">
+        <h2>Filtered Results</h2>
+        <h3 id="categorySelect"></h3>
+        <div>
+            <ul id=results>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="pending content">
+        <h2>Pending to Read</h2>
+        <ul id=pending>
+
+        </ul>
+        <button id="removePending">Read / Delete</button>
+    </div>
+
+    <h3 id="warning" class="content warning"></h3>
+
+    
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
